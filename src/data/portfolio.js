@@ -6,7 +6,7 @@
 export const identity = {
   name:       "Titouan ADAM",          // ex: "Titwan Devrient"
   role:       "Développeur Full Stack",          // ex: "Développeur Full Stack"
-  tagline:    "Je construis des APIs solides et des UIs qui ont du sens.",          // phrase d'accroche courte, ex: "Je construis des APIs solides et des UIs qui ont du sens."
+  tagline:    "Diplomé de l'EPITA et actuellement en poste chez Aubay Solutec, je suis ouvert à de nouvelles opportunités.",          // phrase d'accroche courte
   location:   "Paris, France",          // ex: "Lyon, France"
   available:  true,        // true = badge "Disponible" affiché
   email:      "titouan1adam@gmail.com",          // ex: "titwan@example.com"
