@@ -75,8 +75,21 @@ export const skills = [
   // {
   //   category: "Backend",
   //   items: [
-  //     { name: "Java 17 / 21", level: 90 },  // level de 0 à 100
-  //     { name: "Spring Boot",  level: 85 },
+  //     { name: "Java 17 / 21"},
+  //     { name: "Spring Boot"},
   //   ],
   // },
+  {
+    category: "Techs & Frameworks",
+    items: [
+      { name: "Java 17 / 21" },
+      { name: "Spring Boot" },
+      { name: "React" },
+      { name: "Angular" },
+      { name: "Kotlin" },
+      { name: "Node.js" },
+      { name: "Adobe Experience Manager" },
+      { name: "Git/GitHub/GitLab" },
+    ]
+  }
 ];
