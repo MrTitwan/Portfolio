@@ -7,6 +7,7 @@ import Projects    from './components/Projects/Projects';
 import Skills      from './components/Skills/Skills';
 import Contact     from './components/Contact/Contact';
 import Footer      from './components/Footer/Footer';
+import Banner      from './components/Banner/Banner';
 
 export default function App() {
   useCursor();
@@ -16,6 +17,7 @@ export default function App() {
       {/* Custom cursor */}
       <div id="cursor" className="cursor" />
 
+      <Banner />
       <Navbar />
       <main>
         <Hero />
