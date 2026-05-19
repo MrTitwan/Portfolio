@@ -114,7 +114,8 @@ export default function Contact() {
               onClick={handleSubmit}
               disabled={sent}
             >
-              {sent ? 'Envoyé ✓' : 'Envoyer →'}
+              {/*sent ? 'Envoyé ✓' : 'Envoyer →'}*/}
+              {'Fonctionnalité en cours de développement.'}
             </button>
           </div>
         </div>

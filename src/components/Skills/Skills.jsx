@@ -38,7 +38,7 @@ function EmptyState() {
   return (
     <div className={styles.empty}>
       <span className={styles.emptyIcon}>✦</span>
-      <p>Ajoute tes compétences dans <code>src/data/portfolio.js</code></p>
+      <p>Cette section est vide pour le moment.</p>
     </div>
   );
 }
