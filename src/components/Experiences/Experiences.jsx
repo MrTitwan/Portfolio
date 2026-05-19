@@ -37,7 +37,11 @@ export default function Experiences() {
                 <div className={styles.body}>
                   <h3 className={styles.title}>{exp.title}</h3>
                   <p className={styles.company}>{exp.company}</p>
-                  <p className={styles.desc}>{exp.desc}</p>
+                  {exp.desc.length ===0 ? (
+                    <EmptyState />
+                  ) : (
+                    <p className={styles.desc}>{exp.desc}</p>
+                  )}
                 </div>
 
                 <div className={styles.tags}>
