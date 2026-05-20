@@ -74,22 +74,19 @@ export const projects = [
 export const skills = [
   // {
   //   category: "Backend",
-  //   items: [
-  //     { name: "Java 17 / 21"},
-  //     { name: "Spring Boot"},
-  //   ],
+  //   items: ["Java 17 / 21", "Spring Boot"],
   // },
   {
     category: "Techs & Frameworks",
     items: [
-      { name: "Java 17 / 21" },
-      { name: "Spring Boot" },
-      { name: "React" },
-      { name: "Angular" },
-      { name: "Kotlin" },
-      { name: "Node.js" },
-      { name: "Adobe Experience Manager" },
-      { name: "Git/GitHub/GitLab" },
+      "Java 17 / 21",
+      "Spring Boot",
+      "React",
+      "Angular",
+      "Kotlin",
+      "Node.js",
+      "Adobe Experience Manager",
+      "Git/GitHub/GitLab",
     ]
   }
 ];

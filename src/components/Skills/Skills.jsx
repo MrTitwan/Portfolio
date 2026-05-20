@@ -33,7 +33,7 @@ export default function Skills() {
                 <h3 className={styles.groupTitle}>{group.category}</h3>
                 <div className={styles.tags}>
                   {group.items.map((s) => (
-                    <span key={s.name} className={styles.tag}>{s.name}</span>
+                    <span key={s} className={styles.tag}>{s}</span>
                   ))}
                 </div>
               </div>
