@@ -24,13 +24,6 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-
-      {identity.available && (
-        <span className={styles.badge}>
-          <span className={styles.dot} />
-          Disponible
-        </span>
-      )}
     </nav>
   );
 }

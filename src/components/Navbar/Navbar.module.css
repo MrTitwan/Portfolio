@@ -4,7 +4,7 @@
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1.25rem 4rem;
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(16px);
@@ -12,6 +12,8 @@
 }
 
 .logo {
+  position: absolute;
+  left: 4rem;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--violet-light);
