@@ -79,7 +79,7 @@ export const skills = [
   {
     category: "Techs & Frameworks",
     items: [
-      "Java 17 / 21",
+      "Java",
       "Spring Boot",
       "React",
       "Angular",

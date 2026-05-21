@@ -1,5 +1,6 @@
+import { useMemo } from 'react';
 import { useReveal } from '../../hooks/useReveal';
-import { skills } from '../../data/portfolio';
+import { skills, experiences, projects } from '../../data/portfolio';
 import styles from './Skills.module.css';
 
 function EmptyState() {
@@ -11,8 +12,38 @@ function EmptyState() {
   );
 }
 
+function getSkillFrequency() {
+  const frequency = {};
+
+  experiences.forEach(exp => {
+    exp.tags?.forEach(tag => {
+      frequency[tag] = (frequency[tag] || 0) + 1;
+    });
+  });
+
+  projects.forEach(proj => {
+    proj.stack?.forEach(tech => {
+      frequency[tech] = (frequency[tech] || 0) + 1;
+    });
+  });
+
+  return frequency;
+}
+
+function getFrequencyClass(skillName, frequency) {
+  const count = frequency[skillName] || 0;
+  if (count >= 3) return styles.tagHigh;
+  if (count >= 2) return styles.tagMedium;
+  return styles.tagLow;
+}
+
+function sortByFrequency(items, frequency) {
+  return [...items].sort((a, b) => (frequency[b] || 0) - (frequency[a] || 0));
+}
+
 export default function Skills() {
   const ref = useReveal();
+  const frequency = useMemo(() => getSkillFrequency(), []);
 
   return (
     <section id="competences" ref={ref}>
@@ -32,8 +63,14 @@ export default function Skills() {
               >
                 <h3 className={styles.groupTitle}>{group.category}</h3>
                 <div className={styles.tags}>
-                  {group.items.map((s) => (
-                    <span key={s} className={styles.tag}>{s}</span>
+                  {sortByFrequency(group.items, frequency).map((s) => (
+                    <span
+                      key={s}
+                      className={`${styles.tag} ${getFrequencyClass(s, frequency)}`}
+                      title={`Mentionné ${frequency[s] || 0} fois`}
+                    >
+                      {s}
+                    </span>
                   ))}
                 </div>
               </div>
