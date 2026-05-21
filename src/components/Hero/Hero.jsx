@@ -13,9 +13,6 @@ export default function Hero() {
 
       <div className={styles.inner}>
         <div className={`${styles.pill} reveal`}>
-          {/*<span className={styles.pillDot} />
-          <span>{identity.location || 'Localisation'}</span>
-          <span className={styles.pillSep}>·</span>*/}
           <span>{identity.role || 'Votre titre'}</span>
         </div>
 

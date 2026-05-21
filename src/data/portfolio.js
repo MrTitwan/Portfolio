@@ -1,18 +1,12 @@
-// ─── À REMPLIR ────────────────────────────────────────────────────────────────
-// C'est ici que tu personnalises tout ton portfolio.
-// Remplace les "" et [] par tes vraies informations.
-// ──────────────────────────────────────────────────────────────────────────────
-
 export const identity = {
-  name:       "Titouan ADAM",          // ex: "Titwan Devrient"
-  role:       "Développeur Full Stack",          // ex: "Développeur Full Stack"
+  name:       "Titouan ADAM",
+  role:       "Développeur Full Stack",
   tagline:    "Diplomé de l'EPITA et actuellement en poste chez Aubay Solutec, je suis ouvert à de nouvelles opportunités.",          // phrase d'accroche courte
-  location:   "Paris, France",          // ex: "Lyon, France"
-  available:  true,        // true = badge "Disponible" affiché
-  email:      "titouan1adam@gmail.com",          // ex: "titwan@example.com"
-  linkedin:   "https://www.linkedin.com/in/titouan-adam/",          // URL complète LinkedIn
-  github:     "https://github.com/mrtitwan",          // URL complète GitHub
-  cv:         "",          // URL ou chemin vers ton CV PDF (optionnel)
+  location:   "Paris, France",
+  email:      "titouan1adam@gmail.com",
+  linkedin:   "https://www.linkedin.com/in/titouan-adam/",
+  github:     "https://github.com/mrtitwan",
+  cv:         "",          // URL ou chemin vers le CV PDF
 };
 
 export const experiences = [
@@ -62,7 +56,7 @@ export const experiences = [
 
 export const projects = [
   // {
-  //   type:   "Kata · Full Stack",       // catégorie libre
+  //   type:   "type de projet (ex: personnel, stage, freelance)",
   //   title:  "Nom du projet",
   //   desc:   "Description courte du projet.",
   //   stack:  ["React", "Node.js"],
